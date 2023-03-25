@@ -1,0 +1,32 @@
+{
+  "listaProductos": [
+    {
+      "titulo": "Audifonos",
+      "imagen": "https://st2.depositphotos.com/4097925/8760/v/450/depositphotos_87604372-stock-illustration-hand-drawn-headphone.jpg",
+      "descripcion": "Audifonos de juguete",
+      "precio": 5.000,
+      "stock": "4"
+    },
+    {
+      "titulo": "microfono",
+      "imagen": "https://static8.depositphotos.com/1574544/1043/v/950/depositphotos_10437639-stock-illustration-microphone-drawing.jpg",
+      "descripcion": "microfono de juguete",
+      "precio": 6.000,
+      "stock": "5"
+    },
+    {
+      "titulo": "mouse",
+      "imagen": "https://st3.depositphotos.com/17601448/33068/v/1600/depositphotos_330688922-stock-illustration-electronic-mouse-one-line-drawing.jpg",
+      "descripcion": "mouse de juguete",
+      "precio": 4.000,
+      "stock": "6"
+    },
+    {
+      "titulo": "teclado",
+      "imagen": "https://st3.depositphotos.com/1269954/16246/v/1600/depositphotos_162465506-stock-illustration-cartoon-image-of-keyboard-icon.jpg",
+      "descripcion": "teclado de juguete",
+      "precio": 8.000,
+      "stock": "7"
+    }
+  ]
+}

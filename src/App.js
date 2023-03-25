@@ -1,25 +1,43 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Producto from "./components/Producto";
+import { Container, Row } from "reactstrap";
+import React from "react";
+import Navegacion from "./components/Navegacion";
+import jsonData from "./listaProductos.json";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const listaProductos = jsonData.listaProductos;
+
+class App extends React.Component {
+  constructor() {
+    super();
+
+    this.state = {
+      listaProductos,
+    };
+  }
+
+  render() {
+    const arregloComponentes = this.state.listaProductos.map(
+      (listaProductos, i) => {
+        return (
+          <Producto
+            key={i}
+            titulo={listaProductos.titulo}
+            imagen={listaProductos.imagen}
+            descripcion={listaProductos.descripcion}
+            precio={listaProductos.precio}
+            stock={listaProductos.stock}
+          />
+        );
+      }
+    );
+    return (
+      <Container>
+        <Navegacion titulo="MI primer sitio de compras en React" />
+        <Row>{arregloComponentes}</Row>
+      </Container>
+    );
+  }
 }
 
 export default App;
